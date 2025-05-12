@@ -33,7 +33,7 @@ I’ve created a separate Postman collection that includes all CRUD operations (
 
 You can test all endpoints using the included collection:
 
-📁 [ServerLessCrudAPI-postman_collection.json](./ServerLessCrudAPI-postman_collection.json)
+📁 [ServerLessCrudAPI_postman_collection.json](./ServerLessCrudAPI_postman_collection.json)
 
 
 How To use:
@@ -68,11 +68,13 @@ How To use:
 ## 📁 Folder Structure
 
 ServerlessCrudAPI-Project/
-├── handler.js
-├── serverless.yml
-├── package.json
-├── .gitignore
-├── README.md
-├── Screenshot/
+
+├── handler.js                            
+├── serverless.yml                        
+├── package.json                         
+├── .gitignore                           
+├── README.md                            
+├── Screenshot/                          
 ├── ServerLessCrudAPI-postman_collection.json
+
 
