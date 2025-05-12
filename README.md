@@ -20,10 +20,13 @@ Screenshots are located in the Screenshot/ folder. These images show the AWS ser
 [DynamoDB](./Screenshot/DynamoDb-1.png)
 [DynamoDB](./Screenshot/DynamoDb-2.png)
 
-### Postman Testing  
-[Postman](./Screenshot/PostmanCall-1.png)
-[Postman](./Screenshot/PostmanCall-2.png)
-[Postman](./Screenshot/PostmanCall-3.png)
+## 📸 Postman Testing
+
+Here are test results for all CRUD operations using Postman:
+- [Create Order](./Screenshot/Postman-PostOrder.png)
+- [Get Order](./Screenshot/Postman-GetOrder.png)
+- [Update Order](./Screenshot/Postman-UpdateOrder.png)
+- [Delete Order](./Screenshot/Postman-DeleteOrder.png)
 
 ---
 
@@ -56,12 +59,13 @@ How To use:
 
 ## 🛠️ Features
 
-- `POST /items` → Create an item
-- `GET /items/{id}` → Read an item
-- `PUT /items/{id}` → Update an item
-- `DELETE /items/{id}` → Delete an item
-- Easy deployment using `serverless deploy`
-- Tested with Postman and `curl`
+- `POST /orders` → Create a new coffee order
+- `GET /orders/{id}` → Retrieve an order by ID
+- `PUT /orders/{id}` → Update an existing order
+- `DELETE /orders/{id}` → Cancel/delete an order
+- Easy deployment using `serverless deploy --stage <dev|prod>`
+- Fully tested with Postman and `curl`
+
 
 ---
 
