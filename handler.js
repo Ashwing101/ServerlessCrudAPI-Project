@@ -3,6 +3,7 @@ const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 const TABLE_NAME = 'items';
 
+//Changes made to check the GitAction
 // Create Item using POST method
 module.exports.create = async (event) => {
     try {
