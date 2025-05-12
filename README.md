@@ -33,7 +33,7 @@ I’ve created a separate Postman collection that includes all CRUD operations (
 
 You can test all endpoints using the included collection:
 
-📁 [ServerLessCrudAPI_postman_collection.json](./ServerLessCrudAPI-postman_collection.json)
+📁 [ServerLessCrudAPI_postman_collection.json](./ServerLessCrudAPI_postman_collection.json)
 
 
 How To use:
