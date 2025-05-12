@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - prod
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -35,5 +36,5 @@ jobs:
           else
             echo "Deploying to DEV stage..."
             serverless deploy --stage dev
-	  fi
+          fi
 
