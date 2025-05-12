@@ -67,12 +67,5 @@ How To use:
 
 ## 📁 Folder Structure
 
-ServerlessCrudAPI-Project/
-├── handler.js
-├── serverless.yml
-├── package.json
-├── .gitignore
-├── README.md
-├── Screenshot/
-├── ServerLessCrudAPI-postman_collection.json
+<pre> ``` ServerlessCrudAPI-Project/ ├── handler.js ├── serverless.yml ├── package.json ├── .gitignore ├── README.md ├── Screenshot/ └── ServerLessCrudAPI-postman_collection.json ``` </pre>
 
