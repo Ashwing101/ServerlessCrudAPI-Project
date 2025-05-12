@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-
+      - prod
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -28,5 +28,12 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: serverless deploy
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/prod" ]]; then
+            echo "Deploying to PROD stage..."
+            serverless deploy --stage prod
+          else
+            echo "Deploying to DEV stage..."
+            serverless deploy --stage dev
+	  fi
 
