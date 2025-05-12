@@ -11,13 +11,15 @@ It supports full Create, Read, Update, and Delete operations and includes option
 Screenshots are located in the Screenshot/ folder. These images show the AWS services (Lambda, API Gateway, DynamoDB) used and how they were configured during this project.
 
 ### Lambda Function  
-[Lambda](./Screenshot/Lambda.png)
+[Lambda](./Screenshot/LambdaFun-1.png)
+[Lambda](./Screenshot/LambdaFun-2.png)
 
 ### API Gateway  
 [API Gateway](./Screenshot/ApiGateway.png)
 
 ### DynamoDB Table  
-[DynamoDB](./Screenshot/DynamoDB.png)
+[DynamoDB](./Screenshot/DynamoDb-1.png)
+[DynamoDB](./Screenshot/DynamoDb-2.png)
 
 ### Postman Testing  
 [Postman](./Screenshot/Postman.png)
@@ -30,7 +32,7 @@ I’ve created a separate Postman collection that includes all CRUD operations (
 
 You can test all endpoints using the included collection:
 
-📁 [ServerLessCrudAPI-postman_collection.json](./ServerLessCrudAPI-postman_collection.json)
+📁 [ServerLessCrudAPI-postman_collection.json](./ServerLessCrudAPI.postman_collection.json)
 
 
 How To use:
