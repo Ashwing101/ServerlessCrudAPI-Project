@@ -1,4 +1,3 @@
-# ServerlessCrudAPI-Project
 # 🚀 Serverless CRUD API Project
 
 This is a simple and scalable **Serverless CRUD API** built using **AWS Lambda**, **API Gateway**, and **DynamoDB**, all managed through the **Serverless Framework**. 
