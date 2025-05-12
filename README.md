@@ -22,7 +22,9 @@ Screenshots are located in the Screenshot/ folder. These images show the AWS ser
 [DynamoDB](./Screenshot/DynamoDb-2.png)
 
 ### Postman Testing  
-[Postman](./Screenshot/Postman.png)
+[Postman](./Screenshot/PostmanCall-1.png)
+[Postman](./Screenshot/PostmanCall-2.png)
+[Postman](./Screenshot/PostmanCall-3.png)
 
 ---
 
