@@ -17,44 +17,44 @@ provider:
           Resource: "*"
 
 functions:
-  createItem:
+  createOrder:
     handler: handler.create
     events:
       - http:
-          path: items
+          path: orders
           method: post
           cors: true
 
-  getItem:
+  getOrder:
     handler: handler.get
     events:
       - http:
-          path: items/{id}
+          path: orders/{id}
           method: get
           cors: true
 
-  updateItem:
+  updateOrder:
     handler: handler.update
     events:
       - http:
-          path: items/{id}
+          path: orders/{id}
           method: put
           cors: true
 
-  deleteItem:
+  deleteOrder:
     handler: handler.remove
     events:
       - http:
-          path: items/{id}
+          path: orders/{id}
           method: delete
           cors: true
 
 resources:
   Resources:
-    ItemsTable:
+    OrdersTable:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: items
+        TableName: orders-${self:provider.stage}
         AttributeDefinitions:
           - AttributeName: id
             AttributeType: S

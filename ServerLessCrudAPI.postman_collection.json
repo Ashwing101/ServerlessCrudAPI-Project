@@ -7,15 +7,31 @@
 	},
 	"item": [
 		{
-			"name": "GET ITEMS",
+			"name": "GET Order",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://rpvgwknayj.execute-api.us-east-1.amazonaws.com/prod/orders/order101",
+					"protocol": "https",
+					"host": [
+						"rpvgwknayj",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"orders",
+						"order101"
+					]
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "SAVE ITEMS",
+			"name": "SAVE Order",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -27,7 +43,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"4\",\n    \"name\": \"New Item Added in DynamoDB\"\n}",
+					"raw": "{\"id\": \"order101\", \"name\": \"Chai\", \"quantity\": 1, \"size\": \"Large\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -35,49 +51,49 @@
 					}
 				},
 				"url": {
-					"raw": "https://fjfryea9l2.execute-api.us-east-1.amazonaws.com/dev/items",
+					"raw": "https://rpvgwknayj.execute-api.us-east-1.amazonaws.com/prod/orders",
 					"protocol": "https",
 					"host": [
-						"fjfryea9l2",
+						"rpvgwknayj",
 						"execute-api",
 						"us-east-1",
 						"amazonaws",
 						"com"
 					],
 					"path": [
-						"dev",
-						"items"
+						"prod",
+						"orders"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "DELETE ITEM",
+			"name": "DELETE Order",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://fjfryea9l2.execute-api.us-east-1.amazonaws.com/dev/items/3",
+					"raw": "https://rpvgwknayj.execute-api.us-east-1.amazonaws.com/prod/orders/order101",
 					"protocol": "https",
 					"host": [
-						"fjfryea9l2",
+						"rpvgwknayj",
 						"execute-api",
 						"us-east-1",
 						"amazonaws",
 						"com"
 					],
 					"path": [
-						"dev",
-						"items",
-						"3"
+						"prod",
+						"orders",
+						"order101"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "UPDATE ITEM",
+			"name": "UPDATE Order",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -89,7 +105,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"name\":\"DynamoDB Data is Updated\"}",
+					"raw": "{\"id\": \"order101\", \"name\": \"Latte\", \"quantity\": 3, \"size\": \"Medium\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -97,19 +113,19 @@
 					}
 				},
 				"url": {
-					"raw": "https://fjfryea9l2.execute-api.us-east-1.amazonaws.com/dev/items/4",
+					"raw": "https://rpvgwknayj.execute-api.us-east-1.amazonaws.com/prod/orders/order101",
 					"protocol": "https",
 					"host": [
-						"fjfryea9l2",
+						"rpvgwknayj",
 						"execute-api",
 						"us-east-1",
 						"amazonaws",
 						"com"
 					],
 					"path": [
-						"dev",
-						"items",
-						"4"
+						"prod",
+						"orders",
+						"order101"
 					]
 				}
 			},
