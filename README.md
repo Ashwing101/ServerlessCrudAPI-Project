@@ -1,4 +1,3 @@
-# ServerlessCrudAPI-Project
 # 🚀 Serverless CRUD API Project
 
 This is a simple and scalable **Serverless CRUD API** built using **AWS Lambda**, **API Gateway**, and **DynamoDB**, all managed through the **Serverless Framework**. 
@@ -22,7 +21,9 @@ Screenshots are located in the Screenshot/ folder. These images show the AWS ser
 [DynamoDB](./Screenshot/DynamoDb-2.png)
 
 ### Postman Testing  
-[Postman](./Screenshot/Postman.png)
+[Postman](./Screenshot/PostmanCall-1.png)
+[Postman](./Screenshot/PostmanCall-2.png)
+[Postman](./Screenshot/PostmanCall-3.png)
 
 ---
 
@@ -32,7 +33,7 @@ I’ve created a separate Postman collection that includes all CRUD operations (
 
 You can test all endpoints using the included collection:
 
-📁 [ServerLessCrudAPI-postman_collection.json](./ServerLessCrudAPI.postman_collection.json)
+📁 [ServerLessCrudAPI-postman_collection.json](./ServerLessCrudAPI-postman_collection.json)
 
 
 How To use:
