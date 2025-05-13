@@ -1,7 +1,12 @@
-# 🚀 Serverless CRUD API Project
+# ☕️ Serverless Coffee Order API
 
-This is a simple and scalable **Serverless CRUD API** built using **AWS Lambda**, **API Gateway**, and **DynamoDB**, all managed through the **Serverless Framework**. 
-It supports full Create, Read, Update, and Delete operations and includes optional CI/CD setup using GitHub Actions.
+This project implements a **real-world coffee shop ordering system** using a fully serverless architecture. Built with **AWS Lambda**, **API Gateway**, **DynamoDB**, and the **Serverless Framework**, it supports full Create, Read, Update, and Delete operations for coffee orders.
+
+It also includes:
+- Stage-aware multi-environment deployments (`dev`, `prod`)
+- Automated CI/CD via GitHub Actions
+- Infrastructure-as-code (IaC) management
+- Postman test suite and request collection
 
 ---
 
@@ -39,7 +44,7 @@ I’ve created a separate Postman collection that includes all CRUD operations (
 
 You can test all endpoints using the included collection:
 
-📁 [ServerLessCrudAPI_postman_collection.json](./ServerLessCrudAPI_postman_collection.json)
+📁 [ServerLessCrudAPI.postman_collection.json](./ServerLessCrudAPI.postman_collection.json)
 
 
 How To use:
@@ -62,6 +67,7 @@ How To use:
 
 ## 🛠️ Features
 
+- Use case: Coffee Shop – Place, view, update, or cancel coffee orders
 - `POST /orders` → Create a new coffee order
 - `GET /orders/{id}` → Retrieve an order by ID
 - `PUT /orders/{id}` → Update an existing order
@@ -85,4 +91,13 @@ ServerlessCrudAPI-Project/
 ├── ServerLessCrudAPI-postman_collection.json
 
 
-# trigger
+---
+
+## 🧪 Advanced Project Highlights
+
+- Business-case focused: Coffee Shop Orders API
+- Stage-based deployments (`dev`, `prod`) via `--stage`
+- Postman collection & screenshots
+- Modular, testable architecture (ready for packaging)
+- CI/CD via GitHub Actions
+
