@@ -1,7 +1,7 @@
 'use strict';
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
-const TABLE_NAME = 'items';
+const TABLE_NAME = process.env.TABLE_NAME;
 
 // Changes made to check the Git Action.
 // Create Item using POST method
