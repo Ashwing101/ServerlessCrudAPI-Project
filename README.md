@@ -111,24 +111,51 @@ Tests include valid and invalid request handling.
 
 ## 📁 Folder Structure
 
-ServerlessCrudAPI-Project/
-├── handler.js
-├── serverless.yml
-├── package.json
-├── .gitignore
-├── README.md
-├── Screenshot/
-│   ├── ApiGateway.png
-│   ├── LambdaFun-1.png
-│   ├── DynamoDb-1.png
-│   ├── Postman-PostOrder.png
-│   └── TestResults.png
-├── ServerLessCrudAPI.postman_collection.json
-└── tests/
-    ├── createOrder.test.js
-    ├── getOrder.test.js
-    ├── updateOrder.test.js
-    └── deleteOrder.test.js
+- ServerlessCrudAPI-Project/
+
+   - handler.js
+    
+   - serverless.yml
+    
+   - package.json
+    
+   - .gitignore
+    
+   - README.md
+
+- Screenshot/
+
+   - ApiGateway.png
+
+   - LambdaFun-1.png
+
+   - LambdaFun-2.png
+
+   - DynamoDb-1.png
+
+   - DynamoDb-2.png
+
+   - Postman-PostOrder.png
+
+   - Postman-GetOrder.png
+
+   - Postman-UpdateOrder.png
+
+   - Postman-DeleteOrder.png
+
+   - TestResults.png
+
+- ServerLessCrudAPI.postman_collection.json
+
+- tests/
+
+    - createOrder.test.js
+
+    - getOrder.test.js
+
+    - updateOrder.test.js
+
+    - deleteOrder.test.js
 
 ---
 
