@@ -28,12 +28,11 @@ This project implements a real-world coffee shop ordering system using a fully s
 ---
 
 🚀 **CI/CD & Deployment**
-Multi-stage deployments: dev and prod
-GitHub Actions triggers deployment on push
-All infrastructure defined in serverless.yml
+- Multi-stage deployments: `dev` and `prod`  
+- GitHub Actions triggers deployment on push to relevant branches  
+- All infrastructure is defined using `serverless.yml`
 
 ---
-
 
 ## 📸 Screenshots
 
