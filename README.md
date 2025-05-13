@@ -17,12 +17,13 @@ This project implements a real-world coffee shop ordering system using a fully s
 ---
 
 📦 **Tech Stack**
-AWS Lambda – Serverless compute
-Amazon API Gateway – RESTful HTTP access
-Amazon DynamoDB – NoSQL storage
-Serverless Framework – Infrastructure as Code (IaC)
-Node.js – Backend language
-GitHub Actions – CI/CD pipeline
+
+- **AWS Lambda** – Serverless compute  
+- **Amazon API Gateway** – RESTful HTTP access  
+- **Amazon DynamoDB** – NoSQL storage  
+- **Serverless Framework** – Infrastructure as Code (IaC)  
+- **Node.js** – Backend language  
+- **GitHub Actions** – CI/CD pipeline 
 
 ---
 
