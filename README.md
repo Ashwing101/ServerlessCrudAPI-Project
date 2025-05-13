@@ -1,12 +1,36 @@
 # ☕️ Serverless Coffee Order API
 
-This project implements a **real-world coffee shop ordering system** using a fully serverless architecture. Built with **AWS Lambda**, **API Gateway**, **DynamoDB**, and the **Serverless Framework**, it supports full Create, Read, Update, and Delete operations for coffee orders.
+This project implements a real-world coffee shop ordering system using a fully serverless architecture. Built with AWS Lambda, API Gateway, DynamoDB, and the Serverless Framework, it supports full Create, Read, Update, and Delete operations for coffee orders.
 
-It also includes:
-- Stage-aware multi-environment deployments (`dev`, `prod`)
-- Automated CI/CD via GitHub Actions
-- Infrastructure-as-code (IaC) management
-- Postman test suite and request collection
+---
+
+## 🛠️ Features
+
+- Use case: Coffee Shop – Place, view, update, or cancel coffee orders
+- `POST /orders` → Create a new coffee order
+- `GET /orders/{id}` → Retrieve an order by ID
+- `PUT /orders/{id}` → Update an existing order
+- `DELETE /orders/{id}` → Cancel/delete an order
+- Easy deployment using `serverless deploy --stage <dev|prod>`
+- Fully tested with Postman and `curl`
+
+---
+
+📦 **Tech Stack**
+
+- **AWS Lambda** – Serverless compute  
+- **Amazon API Gateway** – RESTful HTTP access  
+- **Amazon DynamoDB** – NoSQL storage  
+- **Serverless Framework** – Infrastructure as Code (IaC)  
+- **Node.js** – Backend language  
+- **GitHub Actions** – CI/CD pipeline 
+
+---
+
+🚀 **CI/CD & Deployment**
+- Multi-stage deployments: `dev` and `prod`  
+- GitHub Actions triggers deployment on push to relevant branches  
+- All infrastructure is defined using `serverless.yml`
 
 ---
 
@@ -54,35 +78,12 @@ How To use:
 
 ---
 
-## 📦 Tech Stack
-
-- **AWS Lambda** – for serverless compute
-- **Amazon API Gateway** – to expose HTTP endpoints
-- **Amazon DynamoDB** – for NoSQL storage
-- **Serverless Framework** – to manage infrastructure
-- **Node.js** – backend language
-- **GitHub Actions** – (optional) automated CI/CD
-
----
-
-## 🛠️ Features
-
-- Use case: Coffee Shop – Place, view, update, or cancel coffee orders
-- `POST /orders` → Create a new coffee order
-- `GET /orders/{id}` → Retrieve an order by ID
-- `PUT /orders/{id}` → Update an existing order
-- `DELETE /orders/{id}` → Cancel/delete an order
-- Easy deployment using `serverless deploy --stage <dev|prod>`
-- Fully tested with Postman and `curl`
-
----
-
 🧪 **Testing Support (Unit & Integration)** –  
 The project is structured to support unit and integration testing using frameworks like Jest. Handlers are modular, enabling isolated testing of each function such as `createOrder`, `getOrder`, etc.
 
 
 
-## 🧪 Testing
+## 🧪 Unit Testing
 
 All Lambda functions are covered with unit tests using Jest. AWS SDK calls (DynamoDB) are fully mocked, and all scenarios (success and error) are tested.
 
@@ -110,16 +111,51 @@ Tests include valid and invalid request handling.
 
 ## 📁 Folder Structure
 
-ServerlessCrudAPI-Project/
+- ServerlessCrudAPI-Project/
 
-├── handler.js                            
-├── serverless.yml                        
-├── package.json                         
-├── .gitignore                           
-├── README.md                            
-├── Screenshot/                          
-├── ServerLessCrudAPI-postman_collection.json
+   - handler.js
+    
+   - serverless.yml
+    
+   - package.json
+    
+   - .gitignore
+    
+   - README.md
 
+- Screenshot/
+
+   - ApiGateway.png
+
+   - LambdaFun-1.png
+
+   - LambdaFun-2.png
+
+   - DynamoDb-1.png
+
+   - DynamoDb-2.png
+
+   - Postman-PostOrder.png
+
+   - Postman-GetOrder.png
+
+   - Postman-UpdateOrder.png
+
+   - Postman-DeleteOrder.png
+
+   - TestResults.png
+
+- ServerLessCrudAPI.postman_collection.json
+
+- tests/
+
+    - createOrder.test.js
+
+    - getOrder.test.js
+
+    - updateOrder.test.js
+
+    - deleteOrder.test.js
 
 ---
 
