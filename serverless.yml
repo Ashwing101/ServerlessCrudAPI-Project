@@ -1,24 +1,8 @@
-service: serverless-crud-api
-
-frameworkVersion: '3'
-
-provider:
-  name: aws
-  runtime: nodejs18.x
-  region: us-east-1
-  stage: dev
-
-  iam:
-    role:
-      statements:
-        - Effect: Allow
-          Action:
-            - dynamodb:*
-          Resource: "*"
-
 functions:
   createOrder:
     handler: handler.create
+    environment:
+      TABLE_NAME: orders-${self:provider.stage}
     events:
       - http:
           path: orders
@@ -27,6 +11,8 @@ functions:
 
   getOrder:
     handler: handler.get
+    environment:
+      TABLE_NAME: orders-${self:provider.stage}
     events:
       - http:
           path: orders/{id}
@@ -35,6 +21,8 @@ functions:
 
   updateOrder:
     handler: handler.update
+    environment:
+      TABLE_NAME: orders-${self:provider.stage}
     events:
       - http:
           path: orders/{id}
@@ -43,23 +31,11 @@ functions:
 
   deleteOrder:
     handler: handler.remove
+    environment:
+      TABLE_NAME: orders-${self:provider.stage}
     events:
       - http:
           path: orders/{id}
           method: delete
           cors: true
-
-resources:
-  Resources:
-    OrdersTable:
-      Type: AWS::DynamoDB::Table
-      Properties:
-        TableName: orders-${self:provider.stage}
-        AttributeDefinitions:
-          - AttributeName: id
-            AttributeType: S
-        KeySchema:
-          - AttributeName: id
-            KeyType: HASH
-        BillingMode: PAY_PER_REQUEST
 
