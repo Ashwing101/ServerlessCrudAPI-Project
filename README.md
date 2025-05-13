@@ -81,6 +81,31 @@ How To use:
 The project is structured to support unit and integration testing using frameworks like Jest. Handlers are modular, enabling isolated testing of each function such as `createOrder`, `getOrder`, etc.
 
 
+
+## 🧪 Testing
+
+All Lambda functions are covered with unit tests using Jest. AWS SDK calls (DynamoDB) are fully mocked, and all scenarios (success and error) are tested.
+
+📁 Test files:
+- createOrder.test.js
+- getOrder.test.js
+- updateOrder.test.js
+- deleteOrder.test.js
+
+✅ Run tests using:
+
+bash
+npm test
+
+---
+
+### 🧪 Unit Test Results
+
+All CRUD operations were tested using Jest with mocked AWS services.  
+Tests include valid and invalid request handling.
+
+[Test Results](./Screenshot/TestResults.png)
+
 ---
 
 ## 📁 Folder Structure
