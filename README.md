@@ -32,6 +32,9 @@ Here are test results for all CRUD operations using Postman:
 
 ## 📬 Postman Collection
 
+ℹ️ Note: The API was tested in the `prod` stage. The same logic applies to the `dev` stage since stage-based deployments are handled via Serverless Framework.
+
+
 I’ve created a separate Postman collection that includes all CRUD operations (Create, Read, Update, Delete) for easy testing of the API.
 
 You can test all endpoints using the included collection:
