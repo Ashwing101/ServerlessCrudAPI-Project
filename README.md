@@ -75,6 +75,11 @@ How To use:
 - Easy deployment using `serverless deploy --stage <dev|prod>`
 - Fully tested with Postman and `curl`
 
+---
+
+🧪 **Testing Support (Unit & Integration)** –  
+The project is structured to support unit and integration testing using frameworks like Jest. Handlers are modular, enabling isolated testing of each function such as `createOrder`, `getOrder`, etc.
+
 
 ---
 
